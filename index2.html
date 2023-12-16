@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>header</h1>
+    </header>
+    
+    <article>
+        <h1>article</h1>
+    </article>
+
+    <nav>
+        <h1>nav</h1>
+    </nav>
+
+    <aside>
+        <h1>aside</h1>
+    </aside>
+
+    <main>
+        <div class="Mylist" id="Mylist">
+            <ul>
+                <li>Элемент 1</li>
+                <li>Элемент 2</li>
+                <li>Элемент 3</li>
+                <li>Элемент 4</li>
+                <li>Элемент 5</li>
+            </ul>
+        </div>
+        <script defer src="C:\Users\misha\OneDrive\Рабочий стол\УЧЁБА\РКЧИР\ПР 1\JS/selected_list.js"></script>
+
+        <div style="width: 100%; background-color: aquamarine; margin: 20px 0;">
+            <button id="append-list-button">Заполнить список</button>
+
+            <ul id="list">
+            </ul>
+
+        </div>
+        <script defer src="C:\Users\misha\OneDrive\Рабочий стол\УЧЁБА\РКЧИР\ПР 1\JS/list.js"></script>
+
+        <div class="array">
+            <div class="array-item"></div>
+            <div class="array-item"></div>
+            <div class="array-item"></div>
+            <div class="array-item"></div>
+            <div class="array-item"></div>
+            <div class="array-item"></div>
+            <div class="array-item"></div>
+
+            <div class="buttons">
+                <button class="array_button" id="delete-one">
+                    <img src="bag.png" width="25">
+                </button>
+                <button class="array_button" id="delete-all">
+                    <img src="delete.png" width="25">
+                </button>
+                <button class="array_button" id="add-array">
+                    <img src="add.png" width="25">
+                </button>
+            </div>
+        </div>
+        <script defer src="C:\Users\misha\OneDrive\Рабочий стол\УЧЁБА\РКЧИР\ПР 1\JS/array.js"></script>
+
+        <div class="basket" id="basket-div">
+            <div>
+                <p>Итоговая стоимость</p>
+                <div id="basket-sum"></div>
+            </div>
+
+            <button id="sort-button" style="width: 100%;">Сортировка</button>
+
+            <div class="basket-item">
+                <p>Товар 1</p>
+                <p class="price">300</p>
+                <button class="add-button"><img src="add.png" width="20"></button>
+                <p class="count">0</p>
+            </div>
+            <div class="basket-item">
+                <p>Товар 2</p>
+                <p class="price">420</p>
+                <button class="add-button"><img src="add.png" width="20"></button>
+                <p class="count">0</p>
+            </div>
+            <div class="basket-item">
+                <p>Товар 3</p>
+                <p class="price">130</p>
+                <button class="add-button"><img src="add.png" width="20"></button>
+                <p class="count">0</p>
+            </div>
+            <div class="basket-item">
+                <p>Товар 4</p>
+                <p class="price">200</p>
+                <button class="add-button"><img src="add.png" width="20"></button>
+                <p class="count">0</p>
+            </div>
+        </div>
+        <script defer src="C:\Users\misha\OneDrive\Рабочий стол\УЧЁБА\РКЧИР\ПР 1\JS/basket.js"></script>
+
+        <div id="print-array"></div>
+        <button id="filter-button">Фильтрация</button>
+        <script defer src="C:\Users\misha\OneDrive\Рабочий стол\УЧЁБА\РКЧИР\ПР 1\JS/filterarray.js"></script>
+
+        <h1>main</h1>
+        <div class="before-card-text">
+            <p>НАШИ ПРЕИМУЩЕСТВА</p>
+        </div>
+        <div class="cards cards-blur">
+            <div class="card-item3 color1">
+                <div class="cards-text3">
+                    <h1>01</h1>
+                    <p>Гарантия лучшей цены</p>
+                    <button class="buttoncolor1 open-model-window-button">Подробнее</button>
+                </div>
+            </div>
+
+            <div class="card-item3 color2">
+                <div class="cards-text3">
+                    <h1>02</h1>
+                    <p>Кредит без начального взноса</p>
+                    <button class="buttoncolor2 open-model-window-button">Подробнее</button>
+                </div>
+            </div>
+
+            <div class="card-item3 color3">
+                <div class="cards-text3">
+                    <h1>03</h1>
+                    <p>Зачет вашего авто в Trade-in</p>
+                    <button class="buttoncolor3 open-model-window-button">Подробнее</button>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" id="enter_profile">Нажми на меня</button>
+        <button type="button" id="draw_button">Рисование</button>
+        <script src="profile.js"></script>
+
+
+        <div class="brands-block">
+            <button class="green-button brands-button">Подробнее</button>
+        </div>
+
+        <div class="brands-block">
+            <button class="rainbow-button brands-button">Подробнее</button>
+        </div>
+
+        <div class="brands-block">
+            <button class="red-button brands-button">Подробнее</button>
+        </div>
+
+        <div class="brands-block">
+            <button class="half-green-button brands-button">Подробнее</button>
+        </div>
+
+        <form action="" method="get" id="review" class="grid-form">
+
+            <p>Ваш отзыв:</p>
+            <div class="grid-form-item">
+                <div class="input-box">
+                    <input type="text" name="" required>
+                    <span class="text">Имя</span>
+                    <span class="line"></span>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="" required>
+                    <span class="text">Фамилия</span>
+                    <span class="line"></span>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="" required>
+                    <span class="text">Почта</span>
+                    <span class="line"></span>
+                </div>
+                <div class="input-box">
+                    <input type="tel" name="" required>
+                    <span class="text">Телефон</span>
+                    <span class="line"></span>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="" required>
+                    <span class="text">Напишите Ваш отзыв здесь</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+            <button type="submit">Отправить</button>
+        </form>
+
+        
+        <form action="" method="post" id="registration">
+
+            <p>Регистрация пользователя:</p>
+            <label for="name">Имя пользователя:</label><br>
+            <input type="text" name="name" id="name" placeholder="Иван" required><br>
+            <label for="surname">Фамилия пользователя:</label><br>
+            <input type="text" name="surname" id="surname" placeholder="Иванов" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" placeholder="invan@gmail.com" required><br>
+            <label for="tel">Контактный номер:</label><br>
+            <input type="tel" name="tel" id="tel" placeholder="+79999999999" required><br>
+            <label for="password">Пароль:</label><br>
+            <input type="password" name="password" id="password" minlength="5" maxlength="20" required><br>
+            <label for="city">Ваш город:</label><br>
+
+            <select id="city" required>
+                <option value="">--Выберете город--</option>
+                <option value="msc">Москва</option>
+                <option value="spb">Санкт-Петербург</option>
+                <option value="kaz">Казань</option>
+                <option value="kras">Краснодар</option>
+            </select><br><br>
+
+            <button type="submit">Отправить данные</button>
+            
+        </form>
+
+        <div id="scrolltext">
+            Начиная использовать какой-либо сервис/его отдельные функции, либо пройдя процедуру
+             регистрации, Пользователь считается принявшим условия Соглашения в полном объеме, 
+             без всяких оговорок и исключений. В случае несогласия Пользователя с какими-либо из 
+             положений Соглашения Пользователь не вправе использовать сервисы АВТОDOM. В случае 
+             если АВТОDOM были внесены какие-либо изменения в Соглашение в порядке, предусмотренном 
+             пунктом 1.3 Соглашения, с которыми Пользователь не согласен, он обязан прекратить 
+             использование сервисов АВТОDOM.
+        </div>
+
+
+        <div class="basket-container">
+            <div class="my_basket" id="my_basket">
+                <h1>Корзина</h1>
+                <p>Перетащите товар сюда</p>
+                <P>Итоговая стоимость: <span id="result-price">0</span></P>
+            </div>
+
+            <div class="basket_items" id="basket_items">
+                <div class="basket_item">
+                    <span>Товар 1</span><br>
+                    <span class="Myprice">700</span>
+                </div>
+                <div class="basket_item">
+                    <span>Товар 2</span><br>
+                    <span class="Myprice">500</span>
+                </div>
+                <div class="basket_item">
+                    <span>Товар 3</span><br>
+                    <span class="Myprice">300</span>
+                </div>
+            </div>
+        </div>
+        <script defer src="C:\Users\misha\OneDrive\Рабочий стол\УЧЁБА\РКЧИР\ПР 1\JS/dragn_drop.js"></script>
+    </main>
+
+    <footer>
+        <h1>footer</h1>
+        <div id="counter-output"></div>
+        <button id="counter-button">Увеличить</button>
+        <script defer src="C:\Users\misha\OneDrive\Рабочий стол\УЧЁБА\РКЧИР\ПР 1\JS/counter.js"></script>
+    </footer>
+</body>
+
+</html>

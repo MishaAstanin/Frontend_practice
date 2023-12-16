@@ -1,0 +1,691 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: auto auto auto auto;
+    gap: 20px;
+    text-align: center;
+}
+
+body header:nth-child(1) {
+    grid-column: span 3;
+}
+
+body article:nth-child(2) {
+    grid-row: span 2;
+}
+
+body aside:nth-child(4) {
+    grid-row: span 2;
+}
+
+body footer:nth-child(6) {
+    grid-column: span 3;
+}
+
+header {
+    height: 50px;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+
+nav {
+    height: 50px;
+    background-color:chocolate;
+    border-radius: 10px;
+}
+
+article {
+    background-color: blue;
+    border-radius: 10px;
+}
+
+main {
+    background-color: burlywood;
+    border-radius: 10px;
+}
+
+aside {
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1000px){
+    body {
+        grid-template-columns: 15% auto;
+        grid-template-rows: 50px 50px 800px 50px;
+    }
+    body header:nth-child(1) {
+        grid-column: span 2;
+    }
+    
+    body article:nth-child(2) {
+        grid-row: span 1;
+    }
+
+    body nav:nth-child(3) {
+        grid-column: span 2;
+        grid-row-start: 2;
+    }
+    
+    body aside:nth-child(4) {
+        grid-row: span 1;
+    }
+    
+    body footer:nth-child(6) {
+        grid-column: span 1;
+        grid-column-start: 2;
+    }
+
+    main {
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+}
+
+@media screen and (max-width: 700px){
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 50px 800px 50px 50px 50px;
+    }
+
+    body article:nth-child(2) {
+        grid-row: span 1;
+    }
+    
+    body aside:nth-child(4) {
+        grid-row: span 1;
+    }
+
+    body footer:nth-child(6) {
+        grid-column: span 1;
+        grid-column-start: 1;
+    }
+
+    body header:nth-child(1) {
+        grid-column: span 1;
+    }
+
+    body nav:nth-child(3) {
+        grid-column: span 1;
+    }
+
+    body footer:nth-child(3) {
+        grid-column: span 1;
+    }
+
+    header {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+
+    nav {
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+
+    main {
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+
+    article {
+        grid-row-start: 4;
+        grid-column-start: 1;
+    }
+
+    aside {
+        grid-row-start: 5;
+        grid-column-start: 1;
+    }
+
+    footer {
+        grid-row-start: 6;
+        grid-column-start: 1;
+    }
+}
+
+   /*===================================================Карточки3===========================================*/
+
+   .before-card-text {
+    width: 100%;
+    height: auto;
+    background-color: #2a2d3c;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 2%;
+    font-size: clamp(16px, 3vw, 26px);
+    text-align: center;
+ }
+ 
+ .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 7%;
+    background-color: #2a2d3c;
+    padding: 0 4% 4% 4%;
+ }
+
+   .card-item3 {
+    width: 170px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 100px 2px black;
+    margin-bottom: 3%;
+    transition: all 1s;
+ }
+ 
+ .card-item3::before {
+    content: '';
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+ }
+ 
+ .color1::before {
+    background-color: #ff862b;
+ }
+ .color2::before {
+    background-color: #ff2a2a;
+ }
+ .color3::before {
+    background-color: #b225ef;
+ }
+ .buttoncolor1 {
+    background-color: #ff862b;
+ }
+ .buttoncolor2 {
+    background-color: #ff2a2a;
+ }
+ .buttoncolor3 {
+    background-color: #b225ef;
+ }
+ 
+ .cards-text3 {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 5%;
+    text-align: center;
+    font-size: medium;
+ }
+ 
+ .card-item3 button {
+    color: whitesmoke;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
+    padding: 3%;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px gray;
+ }
+ 
+ .cards-text3 h1 {
+    color: whitesmoke;
+    transform: translateY(-50%);
+ }
+ 
+ .cards-blur:hover > .card-item3{
+    filter: blur(3px);
+    transform: scale(0.9);
+ }
+ 
+ .cards-blur > .card-item3:hover {
+    filter: blur(0);
+    transform: scale(1.1);
+ }
+
+ /*===================================================Карточки3===========================================*/
+
+ /*=====================================================Кнопки============================================*/
+
+ .brands-block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5555ff;
+    padding: 2%;
+    margin: 5px 0;
+ }
+ .brands-photo {
+    max-width: 100%;
+    margin-right: 5%;
+ }
+ .brands-button {
+    height: 50px;
+    width: 220px;
+    max-width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+ }
+
+ .neon-blue-button {
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    background-color: transparent;
+    font-size: clamp(10px, 2vw, 16px);
+    padding: 10px;
+    transition: all 0.2s linear;
+    color:whitesmoke;
+    background-color: red;
+  }
+  .neon-blue-button:hover {
+    border: 0;
+    background-color:#03045e;
+    box-shadow: 0 0 70px 5px #5555ff;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+ 
+
+ .brands-block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5555ff;
+    padding: 2%;
+    margin: 5px 0;
+ }
+ .brands-photo {
+    max-width: 100%;
+    margin-right: 5%;
+ }
+ .brands-button {
+    height: 50px;
+    width: 220px;
+    max-width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+ }
+ 
+
+ .green-button {
+    border-width: 0;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    background-color: #66A182;
+ }
+ .green-button:hover {
+    box-shadow: 0 0 40px 40px inset #57cc99;
+    transform: skewX(-20deg)
+ }
+ 
+ .rainbow-button {
+     width: 220px;
+     height: 50px;
+     border: none;
+     color: whitesmoke;
+     background: #220808;
+     position: relative;
+     border-radius: 10px;
+ }
+ .rainbow-button::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+ }
+ .rainbow-button:hover:before {
+    opacity: 1;
+ }
+ @keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+ }
+ 
+ .red-button {
+    width: 200px;
+    height: 35px;
+    border: none;
+    color: black;
+    background: #f0ece3;
+    position: relative;
+    border-radius: 10px;
+    z-index: 0;
+    overflow: hidden;
+ }
+ .red-button::after {
+    content: '';
+    position: absolute;
+    background: #C1121F;
+    border-radius: 10px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 0;
+    transition: all .4s;
+    z-index: -1;
+ }
+ .red-button:hover::after {
+    width: 100%;
+ }
+
+ .half-green-button {
+  background-color: whitesmoke;
+  color: #3a86ff;
+  font-weight: bold;
+  border: 0;
+  position: relative;
+  border-radius: 20px;
+  z-index: 0;
+ }
+ .half-green-button::before {
+  content: '';
+  width: 100%;
+  height: 45%;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  background-color: #3a86ff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: -1;
+ }
+ .half-green-button:hover {
+  color: #000;
+ }
+ /*=====================================================Кнопки============================================*/
+
+    /*==================================================Grid форма===========================================*/
+   
+    .grid-form {
+        width: 100%;
+        height: auto;
+        background-color: #131313;
+        border-radius: 10px;
+        padding: 2%;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+     
+     .grid-form p {
+        margin: 0;
+     }
+     
+     .grid-form button {
+        background: #04d9ff;
+        padding: 1%;
+        border: 0;
+        cursor: pointer;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        text-align: center;
+     }
+     
+     .grid-form-item {
+        width: 100%;
+        height: auto;
+        padding: 2%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+     }
+     
+     .grid-form-item div:nth-child(5) {
+        grid-column: span 2;
+        grid-row: span 1;
+     }
+     
+     .input-box {
+        width: 100%;
+        height: 40px;
+        position: relative;
+        margin-top: 20px;
+     }
+     
+     .input-box input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: 0;
+        font-size: 18px;
+        padding: 0 10px;
+        color: #000;
+        outline: none;
+        z-index: 1;
+     }
+     
+     .input-box .text {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: clamp(14px, 2vw, 18px);
+        display: block;
+        transition: all 0.5s;
+     }
+     
+     .line {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #04d9ff;
+        transition: all 0.5s;
+     }
+     
+     .input-box input:focus + .text,
+     .input-box input:valid + .text {
+        top: -30px;
+        left: -10px;
+     }
+     
+     .input-box input:focus ~ .line,
+     .input-box input:valid ~ .line {
+        height: 100%;
+     }
+     
+     @media  screen and (max-width: 791px) {
+        .grid-form-item {
+           grid-template-columns: repeat(1, 1fr);
+           grid-template-rows: repeat(5, 1fr);
+        }
+        .grid-form-item div:nth-child(5) {
+           grid-column: span 1;
+           grid-row: span 1;
+        }
+     }
+  
+     /*==================================================Grid форма===========================================*/
+
+     /*==================================================Формы===========================================*/
+
+     #scrolltext {
+        border-color: white;
+        border-style:solid;
+        border-width: 1px;
+        color: whitesmoke;
+        padding: 1%;
+        height: 70px;
+        width: 100%;
+        overflow: auto;
+       }
+    
+     #scrolltext::selection {
+        color: yellowgreen;
+       }
+       
+       #agree {
+        color: whitesmoke;
+       }
+       
+       #registration {
+        color: black;
+        border-radius: 10px;
+        background-color: #faedcd;
+        margin-bottom: 2%;
+        padding: 1%;
+        text-align: center;
+        position: relative;
+     }
+    
+     #registration > input
+     {
+        background-color: #f7e1d7;
+        color: #03045e;
+        border-radius: 8px;
+        padding: 3px;
+        margin: 5px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        border-style: dashed;
+     }
+    
+     #registration > label {
+        font-family: 'Roboto Condensed', sans-serif;
+     }
+    
+     #quiz {
+        background-color: #ccd5ae;
+        border-radius: 10px;
+        padding: 1%;
+        margin-bottom: 1%;
+        color: #000;
+     }
+    
+     textarea[placeholder="Мой отзыв..."]::placeholder {
+        color: #03045e;
+        font-size: medium;
+     }
+    
+     textarea {
+       max-width: 100%;
+     }
+
+     /*==================================================Формы===========================================*/
+
+     /*=================================================Список===========================================*/
+
+     .Mylist ul {
+      padding: 10px;
+     }
+
+     .Mylist ul {
+      list-style: none;
+      text-align: start;
+     }
+
+     .Mylist ul li {
+      padding: 2px;
+      cursor: pointer;
+     }
+
+     .selected {
+      background-color: #92cae6;
+      border: solid #0275ac 1px
+     }
+     /*=================================================Список===========================================*/
+
+     .array {
+      width: 100%;
+      height: auto;
+      background-color:#03045e;
+      border-radius: 20px;
+     }
+
+     .array-item {
+      display: inline-block;
+      color: white;
+      font-size: 20px;
+     }
+
+     .array_button {
+      border: none;
+      border-radius: 10px;
+      padding: 10px;
+      cursor: pointer;
+     }
+
+     .basket-item {
+      margin: 10px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     }
+
+     .add-button {
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+     }
+
+
+     .my_basket {
+      padding: 10px;
+      border: solid blue 1px;
+      margin: 10px;
+     }
+
+     .basket_item {
+      border: solid green 1px;
+      margin: 10px;
+     }
+
+     .basket_item:hover {
+      background-color: rgba(4, 126, 0, 0.2);
+     }
